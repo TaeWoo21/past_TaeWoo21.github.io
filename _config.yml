@@ -44,6 +44,7 @@ logo:                  /assets/icons/icon.png
 author:
   name:                Taewoo Lee
   email:               lbaksa21@gmail.com
+  picture:             /assets/img/me.jpg
   # Used by `jekyll-seo-tag`:
   # twitter:             <username>
 
