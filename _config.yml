@@ -24,8 +24,7 @@ title:                 Taewoo Lee
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  "Best Jekyll Theme by a Mile".
-  **Hydejack** is your presence on the web, featuring a blog, portfolio, and resume.
+  It is a blog to write and share what I studied.<br/>
 
 # A shorter description for the sidebar.
 tagline:               >
