@@ -6,5 +6,4 @@ menu: True
 order: 2
 description: >
   This is post section.
-permalink: /projects/_post/
 ---
