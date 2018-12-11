@@ -1,6 +1,7 @@
 ---
 layout: list
 title: Projects
+show_collection: projects
 slug: projects
 menu: True 
 order: 1
