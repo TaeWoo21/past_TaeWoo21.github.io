@@ -1,9 +1,9 @@
 ---
 layout: post
-title: First Post
+title: First Project
 categories: projects
 description: >
   This is the test.
 excerpt_separator: <!--more-->
 ---
-The first
+For the first project post.
