@@ -237,13 +237,13 @@ collections:
     permalink:          /projects/_posts/
     output:            true
   
-  posts:
-    permalink:          /posts/_posts/
-    output:            true
+  #posts:
+  #  permalink:          /posts/_posts/
+  #  output:            true
     
-  diary:
-    permalink:          /diary/_posts/
-    output:            true
+  #diary:
+  #  permalink:          /diary/_posts/
+  #  output:            true
 
 
 
