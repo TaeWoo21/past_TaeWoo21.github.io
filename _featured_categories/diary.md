@@ -4,7 +4,7 @@ title: Diary
 show_collection: diary
 slug: diary
 menu: True 
-order: 4
+order: 3
 description: >
   This is a diary section.
 ---
