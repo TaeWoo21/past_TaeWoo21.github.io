@@ -25,12 +25,10 @@ title:                 Taewoo Lee
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
   It is a blog to write and share what I studied.<br/>
-
 # A shorter description for the sidebar.
 tagline:               >
   Data Engineer<br/><br/>
   공부하고 정리하면서 공유합니다.
-
 # A list of keywords for your blog
 keywords:              []
 
@@ -57,7 +55,6 @@ author:
 # This text will appear in a `<small>` tag in the footer of every page.
 copyright:             >
   © 2018. by Taewoo Lee
-
 # Add links to the footer.
 # Typically you'll want to link to your impress, cookies or privacy policy, etc.
 # legal:
