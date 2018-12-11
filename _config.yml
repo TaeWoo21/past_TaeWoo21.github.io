@@ -232,10 +232,10 @@ collections:
     permalink:         /tag-:name/
     output:            true
 
-  projects:
-    #permalink:         /projects/:path/
-    permalink:          /projects/_posts/
-    output:            true
+  #projects:
+  #  #permalink:         /projects/:path/
+  #  permalink:          /projects/_posts/
+  #  output:            true
   
   #posts:
   #  permalink:          /posts/_posts/
