@@ -121,16 +121,16 @@ defaults:
     values:
       seo:
         type:          WebPage
-  - scope:
-      type:            posts
-    values:
-      seo:
-        type:          WebPage
-  - scope:
-      type:            diary
-    values:
-      seo:
-        type:          WebPage
+  #- scope:
+  #    type:            posts
+  #  values:
+  #    seo:
+  #      type:          WebPage
+  #- scope:
+  #    type:            diary
+  #  values:
+  #    seo:
+  #      type:          WebPage
 
 
 # 3rd Party Integrations
@@ -224,19 +224,19 @@ hydejack:
 # ========================================================================================
 
 collections:
-  projects:
-    permalink:          /projects/_posts/
-    output:            true
-    #permalink:         /projects/:path/
-  
-  posts:
-    permalink:          /posts/_posts/
-    output:            true
-    
-  diary:
-    permalink:          /diary/_posts/
-    output:            true
-  
+  #projects:
+  #  permalink:          /projects/_posts/
+  #  output:            true
+  #  #permalink:         /projects/:path/
+  #
+  #posts:
+  #  permalink:          /posts/_posts/
+  #  output:            true
+  #  
+  #diary:
+  #  permalink:          /diary/_posts/
+  #  output:            true
+  #
   featured_categories:
     permalink:         /:name/
     output:            true
