@@ -226,7 +226,8 @@ collections:
     output:            true
 
   projects:
-    permalink:         /projects/:path/
+    #permalink:         /projects/:path/
+    permalink: /projects/_posts/
     output:            true
 
 
