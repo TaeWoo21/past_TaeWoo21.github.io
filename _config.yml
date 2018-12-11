@@ -124,6 +124,16 @@ defaults:
     values:
       seo:
         type:          WebPage
+  - scope:
+      type:            posts
+    values:
+      seo:
+        type:          WebPage
+  - scope:
+      type:            diary
+    values:
+      seo:
+        type:          WebPage
 
 
 # 3rd Party Integrations
