@@ -224,6 +224,19 @@ hydejack:
 # ========================================================================================
 
 collections:
+  projects:
+    permalink:          /projects/_posts/
+    output:            true
+    #permalink:         /projects/:path/
+  
+  posts:
+    permalink:          /posts/_posts/
+    output:            true
+    
+  diary:
+    permalink:          /diary/_posts/
+    output:            true
+  
   featured_categories:
     permalink:         /:name/
     output:            true
@@ -232,18 +245,7 @@ collections:
     permalink:         /tag-:name/
     output:            true
 
-  #projects:
-  #  #permalink:         /projects/:path/
-  #  permalink:          /projects/_posts/
-  #  output:            true
-  
-  #posts:
-  #  permalink:          /posts/_posts/
-  #  output:            true
-    
-  #diary:
-  #  permalink:          /diary/_posts/
-  #  output:            true
+
 
 
 
