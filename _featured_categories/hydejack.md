@@ -1,4 +1,3 @@
-<!--
 ---
 layout: list
 title: Hydejack
@@ -11,4 +10,3 @@ description: >
   You could say it was.. [hydejacked](http://media3.giphy.com/media/makedRIckZBW8/giphy.gif).
   Open `_featured_tags/hydejack.md` to edit this text.
 ---
--->
