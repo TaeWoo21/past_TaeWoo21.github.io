@@ -3,6 +3,6 @@ layout: post
 title: OpenTSDB Install - (1)
 categories: posts
 description: >
-  OpenTSDB 설치
+  [OpenTSDB 설치 Document](http://opentsdb.net/docs/build/html/installation.html)를 참고하여 작성하였습니다.
 ---
-OpenTSDB를 설치하는 방법을 적어넣을 예정
+블라블라
