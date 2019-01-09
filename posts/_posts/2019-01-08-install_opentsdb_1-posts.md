@@ -40,24 +40,26 @@ taewoo@ubuntu:~$ getconf LONG_BIT
 
 ### 2. Install
 
+아래와 같이 자바를 설치할 폴더를 생성한다.
+
 ```
 sudo mkdir -p /usr/local/java
 ```
-위와 같이 자바를 설치할 폴더를 생성한다.
-<br/>
+
+그리고 다운로드 받은 파일을 자바를 설치할 폴더로 옮긴다.
 
 ```
 sudo mv jdk-8u191-linux-x64.tar.gz /usr/local/java/
 ```
-그리고 다운로드 받은 파일을 자바를 설치할 폴더로 옮긴다.
-<br/>
+
+자바를 설치할 폴더로 이동하여 다운로드한 파일의 압축을 푼다.
 
 ```
 cd /usr/local/java;
 sudo tar xvfz /usr/local/java/jdk-8u191-linux-x64.tar.gz
 ```
-자바를 설치할 폴더로 이동하여 다운로드한 파일의 압축을 푼다.
-<br/>
+
+/etc/profile 파일을 변경해서 JAVA_HOME 환경변수를 설정해준다.
 
 ```
 sudo nano /etc/profile
@@ -65,8 +67,8 @@ sudo nano /etc/profile
 ```
 export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")
 ```
-/etc/profile 파일을 변경해서 JAVA_HOME 환경변수를 설정해준다.
-<br/>
+
+아래의 명령어들을 통해 java를 기본 명령어로 등록한다. 여기서 주의할 점은 필자의 경우 위에서 다운로드한 파일의 압축을 풀었을 때, 'jdk1.8.0_191'이라는 이름의 폴더가 생겨서 아래와 같이 명령어를 입력한 것이다. 독자의 경우 위에서 생성한 자바를 설치할 폴더(/usr/local/java)아래에 생성된 폴더의 이름을 아래의 명령어에서 jdk1.8.0_191 대신에 입력하면 될 것이다.
 
 ```
 sudo update-alternatives --install "/usr/bin/java" "java" "/usr/local/java/jdk1.8.0_191/bin/java" 1;
@@ -78,23 +80,19 @@ sudo update-alternatives --set java /usr/local/java/jdk1.8.0_191/bin/java;
 sudo update-alternatives --set javac /usr/local/java/jdk1.8.0_191/bin/javac;
 sudo update-alternatives --set javaws /usr/local/java/jdk1.8.0_191/bin/javaws;
 ```
-위의 명령어들을 통해 java를 기본 명령어로 등록한다. 여기서 주의할 점은 필자의 경우 위에서 다운로드한 파일의 압축을 풀었을 때, 'jdk1.8.0_191'이라는 이름의 폴더가 생겨서 위와 같이 명령어를 입력한 것이다. 독자의 경우 위에서 생성한 자바를 설치할 폴더(/usr/local/java)아래에 생성된 폴더의 이름을 위 명령어에서 jdk1.8.0_191 대신에 입력하면 될 것이다.
-<br/>
+
+마지막으로 변경사항을 반영해준다.
 
 ```
 . /etc/profile
 ```
-마지막으로 변경사항을 반영해준다.
 
 ### 3. Check
 
-```
-java -version
-```
-지금까지 설치가 모두 잘 되었다면 위의 명령어를 입력했을 때, 설치된 자바의 버전이 출력될 것이다. 필자의 경우 아래와 같이 출력되었다.
-<br/>
+지금까지 설치가 모두 잘 되었다면 아래의 명령어를 입력했을 때, 설치된 자바의 버전이 출력될 것이다. 필자의 경우 아래와 같이 출력되었다.
 
 ```
+taewoo@ubuntu:~$ java -version
 java version "1.8.0_191"
 Java(TM) SE Runtime Environment (build 1.8.0_191-b12)
 Java HotSpot(TM) 64-Bit Server VM (build 25.191-b12, mixed mode)
