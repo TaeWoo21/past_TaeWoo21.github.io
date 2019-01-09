@@ -24,6 +24,7 @@ taewoo@ubuntu:~$ java -version
 ![800x400](../../assets/img/post/install_opentsdb_1_oracle_page.png)
 
 위의 이미지에서 빨간색 박스로 표시된 다운로드 버튼을 누른다. 맨 위의 최신 버전을 다운받지 않는 이유는 많은 버그들이 수정된 recommend 버전을 다운받는 것을 추천하기 때문이다. 다운로드 버튼을 누르면 아래와 같은 화면이 나온다.
+<br/>
 
 ![800x400](../../assets/img/post/install_opentsdb_1_oracle_page2.png)
 
