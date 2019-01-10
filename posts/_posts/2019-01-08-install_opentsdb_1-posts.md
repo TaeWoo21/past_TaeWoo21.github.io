@@ -20,17 +20,17 @@ taewoo@ubuntu:~$ java -version
 OpenTSDB 공식문서에는 'Java Runtime Environment 1.6 or later' 즉 자바 실행 환경이 필요하다고 되어있지만, 우리는 더 큰 개념인 자바 개발도구(Java Development Kit, JDK)를 설치하도록 하자. JRE, JDK 이 둘의 차이는 다음의 URL에서 자세히 확인할 수 있다.<br/>
 [https://wikidocs.net/257](https://wikidocs.net/257)
 
-### 1. Download
+### Download
 구글에서 java jdk download를 검색하거나 직접 오라클 다운로드 페이지에 접속한다. 이 글을 작성하는 시점(2019-01-08)에서 다운로드 페이지는 아래의 링크와 같다.<br/><br/>
 [https://www.oracle.com/technetwork/java/javase/downloads/index.html](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
 <br/>
 
-![800x400](../../assets/img/post/install_opentsdb_1_oracle_page.png)
+![oracle download page1](../../assets/img/post/install_opentsdb_1_oracle_page.png)
 
 위의 이미지에서 빨간색 박스로 표시된 다운로드 버튼을 누른다. 맨 위의 최신 버전을 다운받지 않는 이유는 많은 버그들이 수정된 recommend 버전을 다운받는 것을 추천하기 때문이다. 다운로드 버튼을 누르면 아래와 같은 화면이 나온다.
 <br/>
 
-![800x400](../../assets/img/post/install_opentsdb_1_oracle_page2.png)
+![oracle download page2](../../assets/img/post/install_opentsdb_1_oracle_page2.png)
 
 라이센스에 동의하는 체크를 한 뒤, 다운받기에 앞서 위의 명령어를 통해 자신의 리눅스가 32bit인지 64bit인지 확인할 필요가 있다. 32bit라면 x86라고 되어있는 .tar.gz 파일을 64bit라면 x64라고 되어있는 .tar.gz 파일을 다운받는다. 필자의 경우 64bit이기때문에 jdk-8u191-linux-x64.tar.gz 파일을 다운받았다.
 
