@@ -20,7 +20,7 @@ taewoo@ubuntu:~$ java -version
 OpenTSDB 공식문서에는 'Java Runtime Environment 1.6 or later' 즉 자바 실행 환경이 필요하다고 되어있지만, 우리는 더 큰 개념인 자바 개발도구(Java Development Kit, JDK)를 설치하도록 하자. JRE, JDK 이 둘의 차이는 다음의 URL에서 자세히 확인할 수 있다.<br/>
 [https://wikidocs.net/257](https://wikidocs.net/257)
 
-### Download
+### 1. Download
 구글에서 java jdk download를 검색하거나 직접 오라클 다운로드 페이지에 접속한다. 이 글을 작성하는 시점(2019-01-08)에서 다운로드 페이지는 아래의 링크와 같다.<br/><br/>
 [https://www.oracle.com/technetwork/java/javase/downloads/index.html](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
 <br/>
