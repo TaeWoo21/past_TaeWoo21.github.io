@@ -7,7 +7,9 @@ title: OpenTSDB Install-(2) HBase 설치
 이 문서는 기본적으로 [OpenTSDB 설치 Document](http://opentsdb.net/docs/build/html/installation.html)를 참고하여 작성하였다. 또한 Linux 배포판 중의 하나인 Ubuntu를 기준으로 작성하였다.
 
 ## [ HBase 다운로드 및 설치 ]
-OpenTSDB는 기본적으로 HBase 위에서 동작하는 시계열 데이터베이스이기때문에 HBase 설치가 필요하다. HBase를 동작시키는 모드는 크게 'Standalone 모드'와 'Distributed 모드'로 나뉜다. 이 문서에서는 OpenTSDB를 설치하기 위한 과정을 간단히 설명하기 위해 'Standalone 모드'로 동작시키는 것을 기준으로 작성할 것이다. ~~(사실 Distributed 모드로 시스템을 구축해본 적이 없기도 하다. 원하시는 독자분들은 이곳을 참고해보시길 http://hbase.apache.org/0.94/book/standalone_dist.html)~~
+OpenTSDB는 기본적으로 HBase 위에서 동작하는 시계열 데이터베이스이기때문에 HBase 설치가 필요하다. HBase를 동작시키는 모드는 크게 'Standalone 모드'와 'Distributed 모드'로 나뉜다. 이 문서에서는 OpenTSDB를 설치하기 위한 과정을 간단히 설명하기 위해 'Standalone 모드'로 동작시키는 것을 기준으로 작성할 것이다.
+<br/><br/>
+~~(사실 Distributed 모드로 시스템을 구축해본 적이 없기도 하다. 원하시는 독자분들은 이곳을 참고해보시길 http://hbase.apache.org/0.94/book/standalone_dist.html)~~
 <br/>
 
 ![HBase logo](../../assets/img/post/install_opentsdb_2_hbase_logo.png)
