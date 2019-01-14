@@ -7,9 +7,7 @@ title: OpenTSDB Install-(3) OpenTSDB 설치
 이 문서는 기본적으로 [OpenTSDB 설치 Document](http://opentsdb.net/docs/build/html/installation.html)를 참고하여 작성하였다. 또한 Linux 배포판 중의 하나인 Ubuntu를 기준으로 작성하였다.
 
 
-
 ## [ OpenTSDB 구동 및 설치 조건 확인 ]
-
 - Linux 시스템 (~~Widows에서도 manual building으로 구동할 수 있다고는 하나, 이 문서에서는 다루지 않는다.~~)
 - JDK(Java Development Kit) 1.6 이상
 - HBase 0.92 이상
@@ -20,11 +18,10 @@ title: OpenTSDB Install-(3) OpenTSDB 설치
 - Git
 - 인터넷 연결
 
-
+<br/>
 
 이전의 과정에서 JDK 설치 방법과 HBase 설치 방법을 자세히 다루었으므로 이 문서에서는 생략하도록 한다. 
-
-
+<br/>
 
 패키지들을 설치하기 전에, 패키지 리스트를 업데이트 시켜준다.
 
