@@ -10,21 +10,14 @@ title: OpenTSDB Install-(3) OpenTSDB 설치
 
 ## [ OpenTSDB 구동 및 설치 조건 확인 ]
 
-- Linux 시스템 <br/>(~~Widows에서도 manual building으로 구동할 수 있다고는 하나, 이 문서에서는 다루지 않는다.~~)
-
+- Linux 시스템 (~~Widows에서도 manual building으로 구동할 수 있다고는 하나, 이 문서에서는 다루지 않는다.~~)
 - JDK(Java Development Kit) 1.6 이상
-
 - HBase 0.92 이상
-
 - GnuPlot 4.2 이상
-
 - Autotools (autoconf, automake, libtool)
-
 - Make
-
 - Python
 - Git
-
 - 인터넷 연결
 
 
