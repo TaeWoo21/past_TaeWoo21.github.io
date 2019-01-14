@@ -89,7 +89,7 @@ sudo /usr/local/opentsdb/build.sh
 
 ### 3. Configurations
 
-OpenTSDB에서 설정해주어야 할 것은 크게 두가지가 있다.  opentsdb.conf 파일수정과 OpenTSDB의 스크립트를 이용하여 HBase에 테이블 생성하기.
+OpenTSDB에서 설정해주어야 할 것은 크게 두가지가 있다.  opentsdb.conf 파일수정과 OpenTSDB의 스크립트를 이용하여 HBase에 테이블 생성하기. configuration은 대부분 [http://opentsdb.net/docs/build/html/user_guide/configuration.html](http://opentsdb.net/docs/build/html/user_guide/configuration.html) 이 페이지 참고.
 
 #### 3.1 opentsdb.conf 파일 수정
 
