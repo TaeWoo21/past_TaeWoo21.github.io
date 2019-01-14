@@ -112,7 +112,7 @@ cd /usr/local/opentsdb
 sudo /usr/local/opentsdb/build.sh
 ```
 
-![build.sh success](C:/Users/lbaks/Documents/GitHub/TaeWoo21.github.io/assets/img/post/install_opentsdb_3_build_success.png)
+![build.sh success](../../assets/img/post/install_opentsdb_3_build_success.png)
 
 
 
@@ -179,7 +179,7 @@ tsd.http.staticroot = /usr/local/opentsdb/build/staticroot
 tsd.http.cachedir = /tmp/opntsdb
 ```
 
-![build.sh success](C:/Users/lbaks/Documents/GitHub/TaeWoo21.github.io/assets/img/post/install_opentsdb_3_staticroot.png)
+![staticroot files](../../assets/img/post/install_opentsdb_3_staticroot.png)
 
 
 
@@ -262,7 +262,7 @@ env COMPRESSION=NONE HBASE_HOME=/usr/local/hbase/hbase-2.1.2 /usr/local/opentsdb
 
 
 
-![build.sh success](C:/Users/lbaks/Documents/GitHub/TaeWoo21.github.io/assets/img/post/install_opentsdb_3_create_table.png)
+![create table success](../../assets/img/post/install_opentsdb_3_create_table.png)
 
 
 
@@ -285,7 +285,7 @@ sudo /usr/local/opentsdb/build/tsdb tsd --port=4242 --staticroot=./staticroot/ -
 
 
 
-![build.sh success](C:/Users/lbaks/Documents/GitHub/TaeWoo21.github.io/assets/img/post/install_opentsdb_3_tsdb_ready.png)
+![OpenTSDB ready](../../assets/img/post/install_opentsdb_3_tsdb_ready.png)
 
 
 
@@ -293,5 +293,5 @@ sudo /usr/local/opentsdb/build/tsdb tsd --port=4242 --staticroot=./staticroot/ -
 
 
 
-![build.sh success](C:/Users/lbaks/Documents/GitHub/TaeWoo21.github.io/assets/img/post/install_opentsdb_3_tsdb_webui.png)
+![OpenTSDB web UI](../../assets/img/post/install_opentsdb_3_tsdb_webui.png)
 
