@@ -81,7 +81,7 @@ if __name__ == '__main__':
         sendbuf(s, TSDB_URL, buf)
 ```
 
-
+![build.sh success](../../assets/img/post/simple_opentsdb_test_put_result.png)
 
 ## [ Querying Data with OpenTSDB web UI]
 
