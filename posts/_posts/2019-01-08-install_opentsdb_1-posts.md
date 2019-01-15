@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: posts
-title: OpenTSDB Install-(1) JDK 설치
+title: OpenTSDB Install-(1) Linux에서 JDK 설치
 ---
 
 이 문서는 기본적으로 [OpenTSDB 설치 Document](http://opentsdb.net/docs/build/html/installation.html)를 참고하여 작성하였다. 또한 Linux 배포판 중의 하나인 Ubuntu를 기준으로 작성하였다.
@@ -14,6 +14,10 @@ taewoo@ubuntu:~$ java -version
 ```
 
 ## [ Java 다운로드 및 설치 ]
+
+<p align="center">
+	<img src="../../assets/img/post/install_opentsdb_1_java_img.png" alt="java img" width="200"/>
+</p>
 
 [Java 다운로드 및 설치 참고(https://opentutorials.org/module/516/5558)](https://opentutorials.org/module/516/5558)는 이곳을 참고하면 너무도 자세히 잘 나와있다. 필자의 경우도 이곳에 나와있는 그대로 따라했더니 설치가 가능했다. 아마 위의 글과 거의 비슷한 문서가 될테지만 그래도 한번 정리해보자.<br/>
 
