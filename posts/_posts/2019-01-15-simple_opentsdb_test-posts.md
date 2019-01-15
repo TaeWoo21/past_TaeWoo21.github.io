@@ -65,7 +65,7 @@ def sendbuf(session, url, buf):
     headers = {'content-typ': 'application/json'}
     response = session.post(put_url, data=json.dumps(buf), headers=headers)
     
-    print("[PUT]: %s" % (json.dumps(buf, ensure_ascii=False, indent=4)))
+    print("[PUT]: \n%s" % (json.dumps(buf, ensure_ascii=False, indent=4)))
     print("[Status Code]: %s" % (response.status_code))
     print("[Response Content]: %s" % (response.content))
 
