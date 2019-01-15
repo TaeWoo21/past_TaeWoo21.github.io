@@ -62,6 +62,10 @@ sudo apt-get install git
 ## [ OpenTSDB 다운로드 및 설치 ]
 OpenTSDB를 설치하기 위해 만반의 준비를 다 했으니, 이제 본격적으로 설치를 진행해보도록 하자.
 
+<p align="center">
+	<img src="../../assets/img/post/install_opentsdb_3_opentsdb.png" alt="opentsdb img"/>
+</p>
+
 ### 1. Download (git clone)
 
 OpenTSDB를 clone 해 올 위치로 이동한다.
