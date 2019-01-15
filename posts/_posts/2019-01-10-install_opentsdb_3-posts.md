@@ -224,11 +224,11 @@ env COMPRESSION=NONE HBASE_HOME=/usr/local/hbase/hbase-2.1.2 /usr/local/opentsdb
 참고로 OpenTSDB를 실행시키기 전에는 무조건 hbase_start.sh 쉘스크립트를 이용하여 HBase를 실행시켜야 한다. 실행시킨 뒤, 약 10초 정도 뒤에 OpenTSDB를 실행시켜주면 된다.
 <br/><br/>
 
-OpenTSDB를 실행시키기 위해 실행파일이 있는 위치로 이동한다. 그리고 해당하는 명령어를 입력한다. --port, --staticroot, --cachedir은 반드시 입력해야 하는 인자이다.
+OpenTSDB를 실행시키기 위해 실행파일이 있는 위치로 이동한다. 그리고 해당하는 명령어를 입력한다. --config 인자를 이용하여 3번 configuration에서 수정한 opentsdb.conf 파일의 위치를 알려준다.
 
 ```
 cd /usr/local/opentsdb/build
-sudo /usr/local/opentsdb/build/tsdb tsd --port=4242 --staticroot=./staticroot/ --cachedir=/tmp/opentsdb
+sudo /usr/local/opentsdb/build/tsdb tsd --config=/usr/local/opentsdb/src/opentsdb.conf
 ```
 
 명령어 입력 후 아래의 사진처럼 맨 아래에 'Ready to Serve on ...' 이라는 문구가 나오고 커서가 정지해 있다면 정상적으로 OpenTSDB가 구동된 것이다.
