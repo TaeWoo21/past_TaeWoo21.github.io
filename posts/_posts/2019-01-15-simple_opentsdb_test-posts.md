@@ -9,11 +9,9 @@ title: Simple OpenTSDB Test - Write & Query(with web UI) Data
 이 문서는 기본적으로 [OpenTSDB Document](http://opentsdb.net/docs/build/html/index.html#)를 참고하여 작성하였다. 또한 Linux 배포판 중의 하나인 Ubuntu를 기준으로 작성하였다. 실행코드는 python2를 기준으로 작성하였다.
 
 
-
 ## [ OpenTSDB 실행 ]
 
-
-
+작성중..
 
 
 ## [ Writing Data ]
@@ -63,13 +61,13 @@ def make_puturl(url):
 
 def sendbuf(session, url, buf):
     put_url = make_puturl(url)
-    print put_url
+    print("[URL]: %s" % put_url)
     headers = {'content-typ': 'application/json'}
     response = session.post(put_url, data=json.dumps(buf), headers=headers)
     
-    print("[PUT] %s" % (json.dumps(buf, ensure_ascii=False, indent=4)))
-    print("Status Code: %s" % (response.status_code))
-    print("Response Content: %s" % (response.content))
+    print("[PUT]: %s" % (json.dumps(buf, ensure_ascii=False, indent=4)))
+    print("[Status Code]: %s" % (response.status_code))
+    print("[Response Content]: %s" % (response.content))
 
     
 if __name__ == '__main__':
