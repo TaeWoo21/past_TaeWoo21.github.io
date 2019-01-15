@@ -21,6 +21,8 @@ cd /usr/local/hbase/hbase-2.1.2/bin
 sudo /usr/local/hbase/hbase-2.1.2/bin/start-hbase.sh
 ```
 
+![OpenTSDB ready](../../assets/img/post/simple_opentsdb_test_hbase_start.png)
+
 HBase를 실행시켰다면, 이제 opentsdb 폴더 내의 build/ 폴더로 이동하여 OpenTSDB를 실행시킨다. 필자의 경우에는 아래와 같이 OpenTSDB를 실행시킨다. 참고로 --config 인자에는 opentsdb의 설정파일인 opentsdb.conf 파일의 위치를 지정해준다. 명령어 입력 후 아래의 사진처럼 맨 아래에 ‘Ready to Serve on …’ 이라는 문구가 나오고 커서가 정지해 있다면 정상적으로 OpenTSDB가 구동된 것이다.
 
 ```
@@ -32,6 +34,19 @@ sudo /usr/local/opentsdb/build/tsdb tsd --config=/usr/local/opentsdb/src/opentsd
 
 
 ## [ Writing Data ]
+
+OpenTSDB에 데이터를 입력하는 방법은 크게 3가지가 있다. 첫 번째는 Telnet API를 이용하는 것, 두 번째는 HTTP API를 이용하는 것, 세 번째는 file을 이용하여 batch import를 하는 것이다. 그러나 'Telnet API를 이용'하거나 'file을 이용하여 batch import(결국 Telnet API를 이용하는 방법임)'를 하는 것은 formatting 에러나 storage 에러가 일어나서 데이터 쓰기에 실패한 데이터를 판별할 수 없다. 따라서 [OpenTSDB Docunment - Writing Data](http://opentsdb.net/docs/build/html/user_guide/writing/index.html#input-methods)에서도 HTTP API를 이용하는 것을 권장한다.
+<br/><br/>
+
+여러개의 데이터를 입력할 때, request 당 데이터 포인트 수를 정해놓고 입력하는 것이 좋다. 너무 많은 데이터 포인트를 한번에 보내게 되면 request에 대한 응답을 받는데 시간이 오래 걸리기 때문이다. OpenTSDB Document - /api/put 에서는 request 당 50개의 데이터 포인트씩 보내는 것을 추천한다. 이 request 당 데이터 포인트 수는 컴퓨팅 리소스와 설정에 따라 달라질 수 있으니, 상황에 맞게 조절해서 쓰면 된다.
+<br/><br/>
+
+### 예제 코드
+
+원래는 위에서 언급한 것처럼 request 당 데이터 포인트 수를 고려하여 코드를 작성해야 한다. 하지만 이 문서에서 다루는 심플 테스트에서는 두 개의 데이터 포인트만을 전송하는 간단한 예제이기 때문에 고려하지 않고 코드를 작성했다는 점을 이해하길 바란다.
+<br/><br/>
+
+아래의 코드에서 'TSDB_URL'이라는 변수는 OpenTSDB가 설치되어 있는 주소와 연결된 포트번호를 포함한다. 필자의 경우, 로컬에 포트번호 4242로 OpenTSDB가 연결되어 있으므로 아래와 같이 'http://localhost:4242'로 변수를 지정한 것이다. TSDB_URL을 본인의 상황에 맞게 변경해주고 아래의 코드를 돌렸을 때, 아래의 사진과 같이 Status code가 200 또는 204와 같은 값을 나타내고 빈 Response Content를 나타낼 것이다. 만일 'TSDB_URL'을 잘못 입력했거나, 잘못된 데이터 포인트를 입력했을 때는   다른 Status code 값과 비어있지 않은 Response Content를 나타내게 될 것이다. [자세한 내용은 이곳](http://opentsdb.net/docs/build/html/api_http/index.html#response-codes)을 참고하길 바란다.
 
 ```python
 import json
