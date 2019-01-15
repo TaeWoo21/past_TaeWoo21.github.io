@@ -117,5 +117,16 @@ if __name__ == '__main__':
 
 ## [ Querying Data with OpenTSDB web UI]
 
+데이터 쿼리하는 것 역시 HTTP API를 이용하여 코드 상에서 데이터를 다루는 방법이 있지만, 추후에 다른 문서에서 다루려고 한다. 왜냐하면 쿼리에 대한 내용만 해도 양이 상당하기 때문이다.. 그래서 이 문서에서는 간단하게 OpenTSDB web UI를 이용하여 위의 [ Writing Data ] 예제 코드에서 입력한 데이터를 확인해보도록 하자.
+<br/><br/>
+
+먼저 OpenTSDB web UI를 살펴보면 아래의 사진과 같다. 이러한 OpenTSDB web UI에 접속하는 방법 역시 위의 예제 코드에서 설명한 'TSDB_URL'과 마찬가지로 OpenTSDB가 설치되어 있는 주소와 연결된 포트번호를 포함한다. 필자의 경우, 로컬에 포트번호 4242로 OpenTSDB가 연결되어 있으므로 아래와 같이 [http://localhost:4242](http://localhost:4242)로 접속하면 OpenTSDB web UI를 이용할 수 있다.
+
+![OpenTSDB web UI](../../assets/img/post/install_opentsdb_3_tsdb_webui.png)
+
+### 데이터 확인
+
+워낙 OpenTSDB web UI가 잘 구성되어 있어서 각각의 input란에 어떠한 사항을 입력해야 하는지는 직관적으로 알 수 도 있을 것이다. 그래도 위의 [ Writing Data ] 예제 코드에서 입력한 데이터를 이용해서 간단히 설명을 해보려고 한다.
+
 작성중..
 
