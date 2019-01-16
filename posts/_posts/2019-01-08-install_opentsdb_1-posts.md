@@ -4,6 +4,8 @@ categories: posts
 title: OpenTSDB Install-(1) Linux에서 JDK 설치
 ---
 
+이 문서에서는 OpenTSDB를 설치하기 위해 기본적으로 필요한 조건인 JDK(Java Development Kit)가 설치되어 있는지 확인하는 방법부터 JDK를 설치하는 방법에 대하여 설명한다.
+
 이 문서는 기본적으로 [OpenTSDB 설치 Document](http://opentsdb.net/docs/build/html/installation.html)를 참고하여 작성하였다. 또한 Linux 배포판 중의 하나인 Ubuntu를 기준으로 작성하였다.
 
 ## [ Java 환경 설치 확인 ]
