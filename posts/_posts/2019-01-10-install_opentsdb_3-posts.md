@@ -221,7 +221,14 @@ env COMPRESSION=NONE HBASE_HOME=/usr/local/hbase/hbase-2.1.2 /usr/local/opentsdb
 
 #### 3.3 시스템 시간 확인 및 수정
 
-작성중..
+OpenTSDB에 Timestamp로 저장되어 있는 데이터를 OpenTSDB web UI로 쿼리하거나 나타낼때, 설정된 timezone에 맞춰서 표현된다. 똑같은 timestamp가 설정되어 있는 timezone에 따라 다른 시간으로 표현될 수 있는 것이다. OpenTSDB 설정 파일인 opentsdb.conf 파일에서 tsd.core.timezone 인자로 특별히 timezone을 설정하지 않는 이상 OpenTSDB가 설치된 시스템의 timezone이 default로 설정된다. 
+<br/><br/>
+
+이 문서에서는 한국 기준시(KST)에 맞게 설정하는 방법에 대하여 다루도록 하겠다. 만일 한국 기준시로 설정하고 싶다면, 아래와 같이 명령어를 입력했을 때 아래의 사진과 같은 결과가 나와야 한다.
+
+```
+taewoo@ubuntu:~$ date
+```
 
 ### 4. Check
 
