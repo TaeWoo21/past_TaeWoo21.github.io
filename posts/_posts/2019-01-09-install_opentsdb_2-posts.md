@@ -4,6 +4,8 @@ categories: posts
 title: OpenTSDB Install-(2) Linux에서 HBase 설치
 ---
 
+이 문서에서는 HBase를 다운로드 받고 설치하는 방법부터 설치된 HBase가 올바르게 작동하는지 확인하는 방법까지 설명한다.
+
 이 문서는 기본적으로 [OpenTSDB 설치 Document](http://opentsdb.net/docs/build/html/installation.html)를 참고하여 작성하였다. 또한 Linux 배포판 중의 하나인 Ubuntu를 기준으로 작성하였다.
 
 ## [ HBase 다운로드 및 설치 ]
