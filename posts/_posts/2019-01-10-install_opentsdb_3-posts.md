@@ -145,7 +145,7 @@ tsd.http.staticroot = /usr/local/opentsdb/build/staticroot
 
 # Where TSD should write it's cache files to
 # *** REQUIRED ***
-tsd.http.cachedir = /tmp/opntsdb
+tsd.http.cachedir = /tmp/opentsdb
 ```
 
 ![staticroot files](../../assets/img/post/install_opentsdb_3_staticroot.png)
