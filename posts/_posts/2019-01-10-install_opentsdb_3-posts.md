@@ -237,11 +237,24 @@ Wed Jan 16 18:17:58 KST 2019
 $ sudo ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime
 ```
 
-다른 한가지 방법은 tzselect 명령어를 통해서 CUI를 통해 세팅하는 방법이다. 명령어를 입력하면 아래와 같이 timezone을 
+다른 한가지 방법은 tzselect 명령어를 통해서 CUI를 통해 세팅하는 방법이다. 명령어를 입력한 뒤, 아래의 사진과 같이 Asia 대륙과 Korea(South)를 설정해준다.
 
 ```
-
 taewoo@ubuntu:~$ tzselect
+```
+
+![create table success](../../assets/img/post/install_opentsdb_3_config_timezone2.png)
+
+위의 사진에 나온 설명처럼 설정 후 설명처럼 home 디렉토리의 .profile 파일을 수정한다.
+
+```
+taewoo@ubuntu:~$ sudo vi ~/.profile
+```
+
+vi 에디터로 열린 .profile 파일의 맨 아래에 아래의 내용을 붙여넣는다.
+
+```
+TZ='Asia/Seoul'; export TZ
 ```
 
 ### 4. Check
