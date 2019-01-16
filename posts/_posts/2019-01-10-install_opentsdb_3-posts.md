@@ -93,7 +93,7 @@ sudo /usr/local/opentsdb/build.sh
 
 ### 3. Configurations
 
-OpenTSDB에서 설정해주어야 할 것은 크게 두가지가 있다.  opentsdb.conf 파일수정과 OpenTSDB의 스크립트를 이용하여 HBase에 테이블 생성하기. configuration은 대부분 [http://opentsdb.net/docs/build/html/user_guide/configuration.html](http://opentsdb.net/docs/build/html/user_guide/configuration.html) 이 페이지 참고.
+OpenTSDB에서 설정해주어야 할 것은 크게 세가지가 있다.  opentsdb.conf 파일수정, OpenTSDB의 스크립트를 이용하여 HBase에 테이블 생성하기, 그리고 시스템 시간 설정해주기. configuration은 대부분 [http://opentsdb.net/docs/build/html/user_guide/configuration.html](http://opentsdb.net/docs/build/html/user_guide/configuration.html) 이 페이지 참고.
 
 #### 3.1 opentsdb.conf 파일 수정
 
@@ -218,6 +218,10 @@ env COMPRESSION=NONE HBASE_HOME=/usr/local/hbase/hbase-2.1.2 /usr/local/opentsdb
 아래의 사진과 같은 결과가 나온다면 성공적으로 OpenTSDB 테이블이 생성된 것이다
 
 ![create table success](../../assets/img/post/install_opentsdb_3_create_table.png)
+
+#### 3.3 시스템 시간 확인 및 수정
+
+작성중..
 
 ### 4. Check
 
