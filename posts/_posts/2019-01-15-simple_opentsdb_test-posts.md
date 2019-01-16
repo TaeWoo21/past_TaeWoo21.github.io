@@ -129,5 +129,39 @@ if __name__ == '__main__':
 워낙 OpenTSDB web UI가 잘 구성되어 있어서 각각의 input란에 어떠한 사항을 입력해야 하는지는 직관적으로 알 수 도 있을 것이다. 그래도 위의 [ Writing Data ] 예제 코드에서 입력한 데이터를 이용해서 간단히 설명을 해보려고 한다.
 <br/><br/>
 
-일단 위의 [ Writing Data ] 예제 코드에서 입력했던 두개의 
+일단 위의 [ Writing Data ] 예제 코드에서 입력했던 두개의 dp(data point) 정보를 다시 한 번 확인해보면 아래의 사진과 같다. 참고로 timestamp 값인 '1547525964'와 '1547531538'은 각각 한국 표준시(KST)를 기준으로 '2019-01-15 13:19:24'와 '2019-01-15 14:52:18'이 된다.
 
+![build.sh success](../../assets/img/post/simple_opentsdb_test_put_result2.png)
+
+#### 예제-1
+
+위의 두 데이터를 하나의 그래프로 확인하려면 아래의 사진처럼 input란에 입력을 해주면 된다. From과 To란에는 각각 쿼리하려는 데이터의 시작 시간과 끝 시간을 적어주면 된다. 참고로, OpenTSDB에서 쿼리할 때는 시작과 끝 순간을 모두 포함한다(From 이상 ~ To 이하 시간의 모든 데이터).
+<br/><br/>
+
+그리고 쿼리하려는 Metric 이름과 Tag 정보를 입력해준다. [ Writing Data ] 예제 코드에서 입력한 데이터에서 알 수 있는 것처럼 Metric 이름과 Tags 정보중 'made_by' 키에 대한 값이 같다. 따라서 두 가지 데이터를 한번에 쿼리하려면 아래와 같이 공통된 tag 정보만 입력해주면 된다. 마지막으로 두 데이터 포인터를 하나의 그래프로서 보고싶다면 Aggregator를 sum으로 지정해주면 된다.
+<br/><br/>
+
+~~이후에 쿼리에 대한 내용에 대하여 다룰 때 더 자세히 다루겠지만, sum이라는 Aggregator를 설정하게 되면 단순히 하나의 그래프로 묶어서 보여주는 것이 아니라 같은 timestamp에 해당하는 값이 있을 때 두 값을 더해서 나타내준다. 지금은 완전히 이해 못하더라도 좋으니, 그냥 그렇더라 하고 넘어가는 것도 좋다.~~ 
+
+![build.sh success](../../assets/img/post/simple_opentsdb_test_webui_query_1_1.png)
+
+#### 예제-2
+
+위의 예제-1 그래프와 다른 점은 다 같지만 Aggregator를 none으로 설정해주면 구체적으로 Tag 정보를 지정하지 않았더라도 쿼리 조건에 해당하는 데이터들을 구체적인 Tag 정보에 따라 각각 나타내 준다. 아래의 사진을 보면 위의 예제-1과는 달리 하나의 이어진 그래프가 아니라 각각 다른 색깔인 하나의 점으로 나타난 것을 확인할 수 있다.
+
+![build.sh success](../../assets/img/post/simple_opentsdb_test_webui_query_1.png)
+
+#### 예제-3
+
+이제 구체적인 Tag 정보를 모두 입력하여 각각 하나의 데이터 포인트씩 확인해보려고 한다. 이때 추가적으로 Range 범위를 '[0:]에서 [:]으로' 변경했는데, 이는 단순히 시각적으로 보기 편하게 하기 위함이다. 만약 기존과 똑같이 [0:]으로 두었다면 점이 맨 위의 선에 찍히게 되어 식별하기 어렵기 때문이다.
+<br/><br/>
+
+구체적인 Tag정보인 'content'키에 대한 값을 'data_A'로 입력하여 쿼리해주면 아래와 같다.
+
+![build.sh success](../../assets/img/post/simple_opentsdb_test_webui_query_2.png)
+
+<br/>
+
+마찬가지로 이번엔 구체적인 Tag정보인 'content'키에 대한 값을 'data_B'로 입력하여 쿼리해주면 아래와 같다.
+
+![build.sh success](../../assets/img/post/simple_opentsdb_test_webui_query_3.png)
