@@ -224,10 +224,24 @@ env COMPRESSION=NONE HBASE_HOME=/usr/local/hbase/hbase-2.1.2 /usr/local/opentsdb
 OpenTSDB에 Timestamp로 저장되어 있는 데이터를 OpenTSDB web UI로 쿼리하거나 나타낼때, 설정된 timezone에 맞춰서 표현된다. 똑같은 timestamp가 설정되어 있는 timezone에 따라 다른 시간으로 표현될 수 있는 것이다. OpenTSDB 설정 파일인 opentsdb.conf 파일에서 tsd.core.timezone 인자로 특별히 timezone을 설정하지 않는 이상 OpenTSDB가 설치된 시스템의 timezone이 default로 설정된다. 
 <br/><br/>
 
-이 문서에서는 한국 기준시(KST)에 맞게 설정하는 방법에 대하여 다루도록 하겠다. 만일 한국 기준시로 설정하고 싶다면, 아래와 같이 명령어를 입력했을 때 아래의 사진과 같은 결과가 나와야 한다.
+이 문서에서는 한국 기준시(KST)에 맞게 설정하는 방법에 대하여 다루도록 하겠다. 만일 한국 기준시로 설정하고 싶다면, 아래와 같이 명령어를 입력했을 때 아래와 같은 결과가 나와야 한다. 아래의 결과에서 핵심은 원하는 기준인 'KST'가 포함되어 있는가이다.
 
 ```
 taewoo@ubuntu:~$ date
+Wed Jan 16 18:17:58 KST 2019
+```
+
+만일 한국 기준시로 설정하고 싶은데 결과가 위와 같지 않다면, 다음과 같이 따라하길 바란다. 우분투 환경의 경우 timezone을 변경하는 방법이 크게 두가지가 있다. 첫 번째는 간단하게 명령어 한줄로 변경하는 방법이다.
+
+```
+$ sudo ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime
+```
+
+다른 한가지 방법은 tzselect 명령어를 통해서 CUI를 통해 세팅하는 방법이다. 명령어를 입력하면 아래와 같이 timezone을 
+
+```
+
+taewoo@ubuntu:~$ tzselect
 ```
 
 ### 4. Check
