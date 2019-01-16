@@ -21,7 +21,7 @@ cd /usr/local/hbase/hbase-2.1.2/bin
 sudo /usr/local/hbase/hbase-2.1.2/bin/start-hbase.sh
 ```
 
-![Hbase ready](../../assets/img/post/simple_opentsdb_test_hbase_start.png)
+![Hbase ready](../../assets/img/post/simple_opentsdb_test_hbase_start.PNG)
 
 HBase를 실행시켰다면, 이제 opentsdb 폴더 내의 build/ 폴더로 이동하여 OpenTSDB를 실행시킨다. 필자의 경우에는 아래와 같이 OpenTSDB를 실행시킨다. 참고로 --config 인자에는 opentsdb의 설정파일인 opentsdb.conf 파일의 위치를 지정해준다. 명령어 입력 후 아래의 사진처럼 맨 아래에 ‘Ready to Serve on …’ 이라는 문구가 나오고 커서가 정지해 있다면 정상적으로 OpenTSDB가 구동된 것이다.
 
