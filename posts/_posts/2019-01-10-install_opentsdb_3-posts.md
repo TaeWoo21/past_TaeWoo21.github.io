@@ -4,6 +4,8 @@ categories: posts
 title: OpenTSDB Install-(3) Linux에서 OpenTSDB 설치
 ---
 
+이 문서에서는 OpenTSDB를 git repository에서 clone 받아 설치하는 방법부터 configure 파일을 이용한 OpenTSDB 설정법, 마지막으로 OpenTSDB가 제대로 설치되었는지 확인하는 방법까지 설명한다.
+
 이 문서는 기본적으로 [OpenTSDB 설치 Document](http://opentsdb.net/docs/build/html/installation.html)를 참고하여 작성하였다. 또한 Linux 배포판 중의 하나인 Ubuntu를 기준으로 작성하였다.
 
 
@@ -219,7 +221,7 @@ env COMPRESSION=NONE HBASE_HOME=/usr/local/hbase/hbase-2.1.2 /usr/local/opentsdb
 
 ![create table success](../../assets/img/post/install_opentsdb_3_create_table.png)
 
-#### 3.3 시스템 시간 확인 및 수정
+#### 3.3 Ubuntu 시스템 시간 확인 및 수정
 
 OpenTSDB에 Timestamp로 저장되어 있는 데이터를 OpenTSDB web UI로 쿼리하거나 나타낼때, 설정된 timezone에 맞춰서 표현된다. 똑같은 timestamp가 설정되어 있는 timezone에 따라 다른 시간으로 표현될 수 있는 것이다. OpenTSDB 설정 파일인 opentsdb.conf 파일에서 tsd.core.timezone 인자로 특별히 timezone을 설정하지 않는 이상 OpenTSDB가 설치된 시스템의 timezone이 default로 설정된다. 
 <br/><br/>
