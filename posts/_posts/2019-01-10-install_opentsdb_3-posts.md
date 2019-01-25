@@ -264,7 +264,7 @@ TZ='Asia/Seoul'; export TZ
 참고로 OpenTSDB를 실행시키기 전에는 무조건 hbase_start.sh 쉘스크립트를 이용하여 HBase를 실행시켜야 한다. 실행시킨 뒤, 약 10초 정도 뒤에 OpenTSDB를 실행시켜주면 된다.
 <br/><br/>
 
-OpenTSDB를 실행시키기 위해 실행파일이 있는 위치로 이동한다. 그리고 해당하는 명령어를 입력한다. --config 인자를 이용하여 3번 configuration에서 수정한 opentsdb.conf 파일의 위치를 알려준다.
+OpenTSDB를 실행시키기 위해 실행파일이 있는 위치로 이동한다. 그리고 해당하는 명령어를 입력한다. \-\-config 인자를 이용하여 3번 configuration에서 수정한 opentsdb.conf 파일의 위치를 알려준다.
 
 ```
 cd /usr/local/opentsdb/build
