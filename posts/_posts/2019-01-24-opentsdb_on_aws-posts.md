@@ -254,13 +254,64 @@ echo "Run once $TSD_HOME/start_and_configure_tsd.sh to initialize TSD."
 #### 2.3 SSH를 위한 키 페어 생성
 생성한 EMR 인스턴스를 서버처럼 사용하기 위해서는 SSH 접속을 해야하는데, 이를 위해서는 키 페어 생성이 필요하다. (~~왜이렇게 해야할게 많은 것인지는 모르겠지만, 이게 마지막 준비단계이니 조금만 더 참고 가보자~~)
 
+우선 AWS Management Console 창에서 EC2를 선택한다.
+
+![EC2](../../assets/img/post/opentsdb_on_aws_ec2_keypair1.png)
+
+<br/>
+
+EC2 콘솔 창에 들어가면 다음과 같은 화면이 뜨는데, 여기서 키 페어를 누른다.
+
+![EC2 Key pair](../../assets/img/post/opentsdb_on_aws_ec2_keypair2.png)
+
+<br/>
+
+그리고 나오는 아래의 사진과 같은 창에서 키 페어 생성 버튼을 눌러서 SSH 접속을 할 때 사용할 키 페어를 생성한다.
+
+![EC2 Key pair](../../assets/img/post/opentsdb_on_aws_ec2_keypair3.png)
+
+<br/>
+
+필자의 경우는 아래의 사진과 같이 testuserTW 라는 이름의 키 페어를 생성했다.
+
+![EC2 Key pair](../../assets/img/post/opentsdb_on_aws_ec2_keypair4.png)
+
+<br/>
+
+생성 버튼을 누르고 나면 빨간 박스와 같이 testuserTW 라는 이름의 키 페어가 생성된 것이 보인다. 또한 자동으로 키 페어 이름의 *.pem 파일이 다운로드 된다. 필자의 경우 testuserTW.pem 파일이 다운로드 폴더에 다운받아졌다.
+
+![EC2 Key pair](../../assets/img/post/opentsdb_on_aws_ec2_keypair5.png)
+
+<br/>
+
+이렇게 다운받아진 testuserTW.pem 파일을 ssh 접속을 위해 Home 폴더에 놓는다. 필자의 경우 아래와 같이 *.pem 파일을 Home 폴더로 옮겼다. 이는 독자의 상황에 맞게 수정해서 적용하길 바란다.
+
+```
+sudo mv /Users/Taewoo/Downloads/testuserTW.pem ~/
+```
+
+<br/>
+
+그리고 아래와 같이 파일에 대한 사용자 권한을 600으로 변경해주어야 한다. 만일 사용자 권한을 변경하지 않고 사용하게 되면, 기존에 다운받아진 *.pem 파일의 사용자 권한은 소유자 이외의 사람들에게도 권한이 부여될 수 있는 644로 되어있기 때문에 아래의 사진과 같은 에러가 발생하며 ssh 접속이 거부된다.
+
+![EC2 Key pair](../../assets/img/post/opentsdb_on_aws_ssh_private_key_error.png)
+
+```
+sudo chmod 600 ~/testuserTW.pem
+```
+
 
 #### 2.4 EMR 인스턴스 생성하기
-앞에서 EMR 인스턴스를 
+EMR 인스턴스를 생성하고 설정을 적용하기 위한 준비 과정을 앞에서 모두 마쳤으니, 이제 본격적으로 Amazon EMR 인스턴스를 생성해보도록 하자.
+
+AWS Management Console 창에서 분석 영역에 있는 EMR을 클릭한다.
 
 ![Amazon EMR](../../assets/img/post/opentsdb_on_aws_emr.png)
 
+<br/>
+
 작성중...
+
 
 ## [ OpenTSDB 설정 및 간단한 테스트 ]
 
