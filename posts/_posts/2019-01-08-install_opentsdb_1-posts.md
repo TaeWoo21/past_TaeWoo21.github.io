@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: posts
-title: OpenTSDB Install-(1) Linux에서 JDK 설치 !
+title: OpenTSDB Install-(1) Linux에서 JDK 설치
 comments: true
 ---
 
