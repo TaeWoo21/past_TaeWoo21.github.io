@@ -32,3 +32,11 @@ layout: base
   {% else %}
   {% endcase %}
 {% endfor %}
+
+<!--disqus start-->
+{% if page.comments %}
+<div id="post-disqus" class="container">
+{% include disqus.html %}
+</div>
+{% endif %}
+<!--disqus end-->
