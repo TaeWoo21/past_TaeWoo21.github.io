@@ -768,4 +768,4 @@ Check the TSD web UI at http://localhost:4242/
 
 
 ### 5. Further
-이 포스트에서는 이전 포스트에서 다루었던 구체적인 OpenTSDB Configuration 방법을 다루지 않았다. 실제로 OpenTSDB를 사용하기 위해서는 새로운 metric을 입력하기 위한 설정 변경, 리눅스 시간 변경 등 중요한 내용들이 있으니 꼭 참고하길 바란다.
+이 포스트에서는 이전 포스트에서 다루었던 구체적인 OpenTSDB Configuration 방법을 다루지 않았다. 실제로 OpenTSDB를 사용하기 위해서는 새로운 metric을 입력하기 위한 설정 변경, 리눅스 시간 변경 등 중요한 내용들이 이 포스트에는 빠져있으니 꼭 참고하길 바란다.
