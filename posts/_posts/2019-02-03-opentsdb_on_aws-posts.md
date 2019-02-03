@@ -2,6 +2,7 @@
 layout: post
 categories: posts
 title: AWS에서 OpenTSDB 구축하기
+comments: true
 ---
 
 이 문서에서는 AWS(Amazon Web Services)에서 S3 기반으로 HBase를 구축하는 방법부터 그 위에 OpenTSDB를 설치하는 방법까지 설명한다.

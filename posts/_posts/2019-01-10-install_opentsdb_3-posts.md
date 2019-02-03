@@ -2,6 +2,7 @@
 layout: post
 categories: posts
 title: OpenTSDB Install-(3) Linux에서 OpenTSDB 설치
+comments: true
 ---
 
 이 문서에서는 OpenTSDB를 git repository에서 clone 받아 설치하는 방법부터 configure 파일을 이용한 OpenTSDB 설정법, 마지막으로 OpenTSDB가 제대로 설치되었는지 확인하는 방법까지 설명한다.

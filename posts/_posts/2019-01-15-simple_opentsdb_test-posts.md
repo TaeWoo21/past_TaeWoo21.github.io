@@ -2,6 +2,7 @@
 layout: post
 categories: posts
 title: Simple OpenTSDB Test - OpenTSDB 실행부터 Write & Query(with web UI) Data 
+comments: true
 ---
 
 이 문서에서는 설치된 OpenTSDB를 실행하는 방법부터 HTTP API를 이용한 데이터 입력하고, 입력한 데이터를 OpenTSDB web UI를 이용하여 확인하는 방법까지 설명한다.
