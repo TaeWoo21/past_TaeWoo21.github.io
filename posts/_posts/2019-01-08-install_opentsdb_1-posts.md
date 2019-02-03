@@ -1,6 +1,7 @@
 ---
 layout: post
 categories: posts
+comments: true
 title: OpenTSDB Install-(1) Linux에서 JDK 설치
 ---
 
