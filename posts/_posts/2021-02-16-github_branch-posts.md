@@ -5,8 +5,6 @@ title: [GitHub] 협업할 때 사용하는 Git 브랜치 종류 및 사용법
 comments: true
 ---
 
-이 문서에서는 AWS(Amazon Web Services)에서 S3 기반으로 HBase를 구축하는 방법부터 그 위에 OpenTSDB를 설치하는 방법까지 설명한다.
-
 이 문서는 기본적으로 [[GitHub] Git 브랜치의 종류 및 사용법 (5가지)](https://gmlwjd9405.github.io/2018/05/11/types-of-git-branch.html)를 참고하여 작성하였다. 또한 이 문서에 포함되어 있는 내용은 작성일(2021-02-16) 기준 내용이므로 참고하길 바란다.
 
 
@@ -18,7 +16,7 @@ feat/[기능요약] 형식으로 사용하는 것을 추천
 
 ### bash commands 예시
 
-```
+```bash
 # (1)
 # feature 브랜치(feat/fast-preprocess)를 develop 브랜치에서 분기한다.
 # [브랜치명]으로 새로운 브랜치를 만들면서 체크아웃 한다(git checkout -b [브랜치명])
