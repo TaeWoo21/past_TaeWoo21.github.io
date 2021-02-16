@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: posts
-title: [GitHub] 협업할 때 사용하는 Git 브랜치 종류 및 사용법
+title: \[GitHub\] 협업할 때 사용하는 Git 브랜치 종류 및 사용법
 comments: true
 ---
 
