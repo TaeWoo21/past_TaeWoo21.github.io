@@ -24,7 +24,7 @@ NumPy 모듈을 이용하여 N차원 배열을 합치는 다양한 방법
 	- np.concatenate((a,b), axis=0)
 
 
-### vstack()
+### np.vstack()
 
 
 ```python
@@ -35,11 +35,12 @@ array([[1, 2, 3],
        [4, 5, 6]])
 ```
 ```python
->>> a = np.arange(6).reshape((2,3))    # array([[0, 1, 2],
-    									        [3, 4, 5]]) 
->>> b = np.arange(6,12).reshape((2,3))    # array([[ 6,  7,  8],
-      											   [ 9, 10, 11]])
-
+# a : array([[0, 1, 2],
+#            [3, 4, 5]])
+# b : array([[ 6,  7,  8],
+#            [ 9, 10, 11]])
+>>> a = np.arange(6).reshape((2,3))   
+>>> b = np.arange(6,12).reshape((2,3))    
 >>> np.vstack((a,b))
 array([[ 0,  1,  2],
        [ 3,  4,  5],
@@ -48,13 +49,13 @@ array([[ 0,  1,  2],
 ```
 
 
-### row_stack()
+### np.row_stack()
 
 np.vstack() 결과와 동일
 
 
 
-### r_
+### np.r_
 
 ```python
 >>> a = np.array([1, 2, 3])
@@ -71,10 +72,12 @@ array([[1, 2, 3],
        [4, 5, 6]])
 ```
 ```python
->>> a = np.arange(6).reshape((2,3))    # array([[0, 1, 2],
-    									        [3, 4, 5]]) 
->>> b = np.arange(6,12).reshape((2,3))    # array([[ 6,  7,  8],
-      											   [ 9, 10, 11]])
+# a : array([[0, 1, 2],
+#            [3, 4, 5]])
+# b : array([[ 6,  7,  8],
+#            [ 9, 10, 11]])
+>>> a = np.arange(6).reshape((2,3))   
+>>> b = np.arange(6,12).reshape((2,3))    
 >>> np.r_[a,b]    # shape: (4, 3)
 array([[ 0,  1,  2],
        [ 3,  4,  5],
@@ -82,11 +85,13 @@ array([[ 0,  1,  2],
        [ 9, 10, 11]])
 ```
 ```python
+# a : array([[0, 1, 2],
+#            [3, 4, 5]])
+# b : array([[ 6,  7,  8],
+#            [ 9, 10, 11]])
 # 차원 하나가 증가해서 붙음
->>> a = np.arange(6).reshape((2,3))    # array([[0, 1, 2],
-    									        [3, 4, 5]]) 
->>> b = np.arange(6,12).reshape((2,3))    # array([[ 6,  7,  8],
-      											   [ 9, 10, 11]])
+>>> a = np.arange(6).reshape((2,3))    
+>>> b = np.arange(6,12).reshape((2,3))   
 >>> np.r_[[a],[b]]    # shape: (2, 2, 3)
 array([[[ 0,  1,  2],
         [ 3,  4,  5]],
@@ -96,7 +101,7 @@ array([[[ 0,  1,  2],
 ```
 
 
-### hstack()
+### np.hstack()
 
 ```python
 >>> a = np.array([1, 2, 3])
@@ -105,17 +110,19 @@ array([[[ 0,  1,  2],
 array([1, 2, 3, 4, 5, 6])
 ```
 ```python
->>> a = np.arange(6).reshape((2,3))    # array([[0, 1, 2],
-    									        [3, 4, 5]]) 
->>> b = np.arange(6,12).reshape((2,3))    # array([[ 6,  7,  8],
-      											   [ 9, 10, 11]])
+# a : array([[0, 1, 2],
+#            [3, 4, 5]])
+# b : array([[ 6,  7,  8],
+#            [ 9, 10, 11]])
+>>> a = np.arange(6).reshape((2,3))    
+>>> b = np.arange(6,12).reshape((2,3))   
 >>> np.hstack([a,b])
 array([[ 0,  1,  2,  6,  7,  8],
        [ 3,  4,  5,  9, 10, 11]])      											   
 ```
 
 
-### column_stack()
+### np.column_stack()
 
 ```python
 >>> a = np.array([1, 2, 3])
@@ -126,6 +133,10 @@ array([[1, 2],
        [3, 4]])
 ```
 ```python
+# a : array([[0, 1, 2],
+#            [3, 4, 5]])
+# b : array([[ 6,  7,  8],
+#            [ 9, 10, 11]])
 >>> a = np.arange(6).reshape((2,3))
 >>> b = np.arange(6,12).reshape((2,3))
 >>> np.column_stack((a,b))
@@ -134,7 +145,7 @@ array([[ 0,  1,  2,  6,  7,  8],
 ```
 
 
-### c_
+### np.c_
 ```python
 >>> a = np.array([1, 2, 3])
 >>> b = np.array([4, 5, 6])
@@ -144,10 +155,12 @@ array([[1, 2],
        [3, 4]])
 ```
 ```python
->>> a = np.arange(6).reshape((2,3))    # array([[0, 1, 2],
-    									        [3, 4, 5]]) 
->>> b = np.arange(6,12).reshape((2,3))    # array([[ 6,  7,  8],
-      											   [ 9, 10, 11]])
+# a : array([[0, 1, 2],
+#            [3, 4, 5]])
+# b : array([[ 6,  7,  8],
+#            [ 9, 10, 11]])
+>>> a = np.arange(6).reshape((2,3))    
+>>> b = np.arange(6,12).reshape((2,3))    
 >>> np.c_[a,b]    # shape: (4, 3)
 array([[ 0,  1,  2,  6,  7,  8],
        [ 3,  4,  5,  9, 10, 11]])
@@ -163,10 +176,12 @@ array([[ 0,  1,  2,  6,  7,  8],
 array([1, 2, 3, 4, 5, 6])
 ```
 ```
->>> a = np.arange(6).reshape((2,3))    # array([[0, 1, 2],
-    									        [3, 4, 5]])
->>> b = np.arange(6,12).reshape((2,3))    # array([[ 6,  7,  8],
-      											   [ 9, 10, 11]])
+# a : array([[0, 1, 2],
+#            [3, 4, 5]])
+# b : array([[ 6,  7,  8],
+#            [ 9, 10, 11]])
+>>> a = np.arange(6).reshape((2,3))    
+>>> b = np.arange(6,12).reshape((2,3))    
 >>> np.concatenate((a,b), axis=0)
 array([[ 0,  1,  2],
        [ 3,  4,  5],
@@ -174,6 +189,10 @@ array([[ 0,  1,  2],
        [ 9, 10, 11]])
 ```
 ```
+# a : array([[0, 1, 2],
+#            [3, 4, 5]])
+# b : array([[ 6,  7,  8],
+#            [ 9, 10, 11]])
 >>> a = np.arange(6).reshape((2,3))
 >>> b = np.arange(6,12).reshape((2,3))
 >>> np.concatenate((a,b), axis=1)
