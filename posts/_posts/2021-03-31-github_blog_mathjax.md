@@ -104,19 +104,15 @@ use_math: true
 
 - <b>Example</b>:
 
-$$
-[\lim_{x\to 0}{\frac{e^x-1}{2x}}
-\overset{\left[\frac{0}{0}\right]}{\underset{\mathrm{H}}{=}}
-\lim_{x\to 0}{\frac{e^x}{2}}={\frac{1}{2}}]
-$$
+    $$
+    \sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}
+    $$
 	
 - <b>Markdown</b>:
 
     ```
     $$
-    [\lim_{x\to 0}{\frac{e^x-1}{2x}}
-    \overset{\left[\frac{0}{0}\right]}{\underset{\mathrm{H}}{=}}
-    \lim_{x\to 0}{\frac{e^x}{2}}={\frac{1}{2}}]
+    \sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}
     $$
 	 ```
 
