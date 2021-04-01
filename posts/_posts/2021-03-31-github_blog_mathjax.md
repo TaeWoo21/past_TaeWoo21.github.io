@@ -105,7 +105,7 @@ use_math: true
 - <b>Example</b>:
 
 
-$$f(x) = x^2$$
+$$ f(x) = x^2 $$
 
 	
 - <b>Markdown</b>:
