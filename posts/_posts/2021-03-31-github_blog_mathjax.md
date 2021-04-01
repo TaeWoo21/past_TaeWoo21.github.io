@@ -94,11 +94,11 @@ use_math: true
 
 - <b>Example</b>:
 
-	Lorem ipsum $$ f(x) = x^2 $$.
+	Lorem ipsum $f(x) = x^2$.
 	
 - <b>Markdown</b>:
 
-	```Lorem ipsum $$ f(x) = x^2 $$.```
+	```Lorem ipsum $f(x) = x^2$.```
 
 ### 2. Block
 
