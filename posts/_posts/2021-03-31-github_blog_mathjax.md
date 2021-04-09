@@ -68,12 +68,15 @@ kramdown:
 
 hydejack 테마의 경우 my-head.html 파일이지만 다른 테마의 경우 다른 이름일 수도 있다.
 
-```
-\{% if page.use_math %\}
-    \{% include mathjax_support.html %\}
-\{% endif %\}
+{% raw %}
 
+```html
+{% if page.use_math %}
+    {% include mathjax_support.html %}
+{% endif %}
 ```
+
+{% endraw %}
 
 ### 4. 포스트 작성시 YAML front-matter 설정
 포스트를 작성할 때 사용하는 YAML front-matter의 종류는 테마 종류별로 또는 사용자가 정의한 방식 등에 따라 다를 수 있다. 하지만 여기서 중요한 포인트는 위의 3번에서 mathjax를 사용하기 위해 미리 정의한 파라미터인 use\_math를 true로 설정했다는 것이다.
