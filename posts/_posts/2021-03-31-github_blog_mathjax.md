@@ -105,17 +105,23 @@ use_math: true
 
 ### 2. Block
 
-$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
-
 - <b>Example</b>:
 
-
+	$$
+	\begin{aligned}
+	x = {-b \pm \sqrt{b^2-4ac} \over 2a}
+	\end{aligned}
+	$$
 	
 - <b>Markdown</b>:
 
     ```
-    $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
-	```
+    $$
+	 \begin{aligned}
+	 x = {-b \pm \sqrt{b^2-4ac} \over 2a}
+	 \end{aligned}
+	 $$
+	 ```
 
 
 ## Reference
