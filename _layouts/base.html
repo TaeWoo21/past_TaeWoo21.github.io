@@ -31,6 +31,10 @@ layout: compress
 
 <head>
   {% include head/index.html %}
+  <!--for math formula-->
+  {% if page.use_math %}
+    {% include mathjax_support.html %}
+  {% endif %}
 </head>
 
 <body>
