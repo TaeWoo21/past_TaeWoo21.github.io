@@ -132,4 +132,7 @@ use_math: true
 .MJXc-display {
     display: block
 }
+.katex-display {
+    display: block
+}
 </style>
