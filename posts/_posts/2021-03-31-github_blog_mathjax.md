@@ -102,10 +102,10 @@ use_math: true
 
 ### 2. Block
 
+$$ f(x) = x^2 $$
+
 - <b>Example</b>:
 
-
-$$ f(x) = x^2 $$
 
 	
 - <b>Markdown</b>:
