@@ -37,29 +37,25 @@ kramdown:
 ### 2. \_includes 디렉토리에 mathjax_support.html 파일 생성
 포스트 내에서 수식을 표현하는 기능을 선택적으로 사용할 수 있도록 하기 위해 \_include 디렉토리 내에 mathjax를 사용할 수 있도록 하는 스크립트 코드가 담긴 mathjax_support.html 파일을 생성한다.
 
+>
+#### 참고 : MathJax CDN shutting down on April 30, 2017
+위와 같은 이슈로 https://cdnjs.cloudflare.com에서 호스팅을 받아 사용하는 것을 추천
+
 ```html
 <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        TeX: {
-            equationNumbers: {
-                autoNumber: "AMS"
-            }
-        },
-        tex2jax: {
-            inlineMath: [ ['$', '$'] ],
-            displayMath: [ ['$$', '$$'] ],
-            processEscapes: true,
-        }
-    });
-    MathJax.Hub.Register.MessageHook("Math Processing Error",function (message){
-        alert("Math Processing Error: "+message[1]);
-    });
-    MathJax.Hub.Register.MessageHook("TeX Jax - parse error",function (message){
-        alert("Math Processing Error: "+message[1]);
-    });
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    }
+  });
+
 </script>
+
 <script type="text/javascript" async
-      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
 </script>
 ```
 
@@ -123,3 +119,4 @@ use_math: true
 - [1] [Jekyll 마크다운 옵션](https://jekyllrb-ko.github.io/docs/configuration/markdown)
 - [2] [Hydejack 테마 블로그에 MathJax로 수식 적용하기 참고](https://airvw.github.io/github/2020-12-14-blog-mathjax/)
 - [3] [다른 테마 블로그에 MathJax로 수식 적용하기 참고](https://mkkim85.github.io/blog-apply-mathjax-to-jekyll-and-github-pages/)
+- [4] [호스팅 종료 이슈 - MathJax CDN shutting down](https://www.mathjax.org/cdn-shutting-down/)
