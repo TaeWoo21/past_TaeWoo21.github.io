@@ -105,7 +105,7 @@ use_math: true
 
 ### 2. Block
 
-$$ f(x) = x^2 $$
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
 
 - <b>Example</b>:
 
@@ -114,8 +114,8 @@ $$ f(x) = x^2 $$
 - <b>Markdown</b>:
 
     ```
-    $$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$$
-```
+    $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
+	```
 
 
 ## Reference
