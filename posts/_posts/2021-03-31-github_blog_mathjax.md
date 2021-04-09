@@ -56,7 +56,6 @@ kramdown:
 <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
-</script>
 ```
 
 ### 3. \_includes 디렉토리의 my-head.html 파일 수정
