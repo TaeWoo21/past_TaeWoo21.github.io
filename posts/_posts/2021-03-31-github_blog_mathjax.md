@@ -39,7 +39,7 @@ kramdown:
 
 >
 #### 참고 : MathJax CDN shutting down on April 30, 2017
-위와 같은 이슈로 https://cdnjs.cloudflare.com에서 호스팅을 받아 사용하는 것을 추천
+위와 같은 이슈로 https://cdnjs.cloudflare.com에서 호스팅을 받아 사용하는 것을 추천[4, 5]
 
 ```html
 <script type="text/x-mathjax-config">
@@ -114,9 +114,14 @@ use_math: true
    $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
 ```
 
+## [ 이슈 ]
+- 포스트에 접속한 처음 화면에는 수식이 적용되지 않다가 새로고침을 하고나면 적용되는 이슈가 아직 해결되지 않음..
+- 다른 블로그에서는 첫 화면에도 수식이 잘 동작하는 것으로 보이는데, 블로그 테마의 문제인지 hydejack 테마를 이용하는 다른 블로거[2]에게서도 동일한 문제가 일어나고있음
+
 
 ## Reference
 - [1] [Jekyll 마크다운 옵션](https://jekyllrb-ko.github.io/docs/configuration/markdown)
 - [2] [Hydejack 테마 블로그에 MathJax로 수식 적용하기 참고](https://airvw.github.io/github/2020-12-14-blog-mathjax/)
 - [3] [다른 테마 블로그에 MathJax로 수식 적용하기 참고](https://mkkim85.github.io/blog-apply-mathjax-to-jekyll-and-github-pages/)
 - [4] [호스팅 종료 이슈 - MathJax CDN shutting down](https://www.mathjax.org/cdn-shutting-down/)
+- [5] [다른 블로그에 MathJax로 수식 적용하기 참고 2](https://baeseongsu.github.io/posts/apply-mathjax-to-jekyll-blog/)
