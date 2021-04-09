@@ -101,37 +101,31 @@ use_math: true
 	
 - <b>Markdown</b>:
 
-	```Lorem ipsum $f(x) = x^2$.```
+	```latex
+	Lorem ipsum $f(x) = x^2$.
+	```
 
 ### 2. Block
 
-$$
-\begin{aligned}
-x = {-b \pm \sqrt{b^2-4ac} \over 2a}
-\end{aligned}
-$$
-	
-$$
-\lim_{x\to 0}{\frac{e^x-1}{2x}}
-\overset{\left[\frac{0}{0}\right]}{\underset{\mathrm{H}}{=}}
-\lim_{x\to 0}{\frac{e^x}{2}}={\frac{1}{2}}
-$$
-
-
-
 - <b>Example</b>:
 
+	>
+	$$
+	\lim_{x\to 0}{\frac{e^x-1}{2x}}
+	\overset{\left[\frac{0}{0}\right]}{\underset{\mathrm{H}}{=}}
+	\lim_{x\to 0}{\frac{e^x}{2}}={\frac{1}{2}}
+	$$
 	
 	
 - <b>Markdown</b>:
 
-    ```
-    $$
-	 \begin{aligned}
-	 x = {-b \pm \sqrt{b^2-4ac} \over 2a}
-	 \end{aligned}
-	 $$
-	 ```
+	```latex
+   $$
+	\begin{aligned}
+	x = {-b \pm \sqrt{b^2-4ac} \over 2a}
+	\end{aligned}
+	$$
+	```
 
 
 ## Reference
