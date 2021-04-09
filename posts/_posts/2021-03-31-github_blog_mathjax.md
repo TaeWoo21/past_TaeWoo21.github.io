@@ -109,22 +109,14 @@ use_math: true
 
 - <b>Example</b>:
 
-	$$
-	\lim_{x\to 0}{\frac{e^x-1}{2x}}
-	\overset{\left[\frac{0}{0}\right]}{\underset{\mathrm{H}}{=}}
-	\lim_{x\to 0}{\frac{e^x}{2}}={\frac{1}{2}}
-	$$
+	$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
 	
 	
 - <b>Markdown</b>:
 
 	```latex
-   $$
-	\begin{aligned}
-	x = {-b \pm \sqrt{b^2-4ac} \over 2a}
-	\end{aligned}
-	$$
-	```
+   $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
+```
 
 
 ## Reference
