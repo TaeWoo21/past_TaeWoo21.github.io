@@ -106,12 +106,6 @@ use_math: true
 ### 2. Block
 
 - <b>Example</b>:
-
-	$$
-	\begin{aligned}
-	x = {-b \pm \sqrt{b^2-4ac} \over 2a}
-	\end{aligned}
-	$$
 	
 	$$
 	\{aligned}
@@ -126,9 +120,7 @@ use_math: true
 	$$
 	
 	$$
-	\begin
 	x = {-b \pm \sqrt{b^2-4ac} \over 2a}
-	\end
 	$$
 	
 - <b>Markdown</b>:
