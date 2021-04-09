@@ -133,6 +133,8 @@ use_math: true
     display: block
 }
 .katex-display {
-    display: block
+    display: block;
+    align: center;
+    text-align: center;
 }
 </style>
