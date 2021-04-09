@@ -109,7 +109,6 @@ use_math: true
 
 - <b>Example</b>:
 
-	>
 	$$
 	\lim_{x\to 0}{\frac{e^x-1}{2x}}
 	\overset{\left[\frac{0}{0}\right]}{\underset{\mathrm{H}}{=}}
