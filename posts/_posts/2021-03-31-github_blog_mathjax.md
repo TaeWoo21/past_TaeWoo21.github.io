@@ -37,8 +37,7 @@ kramdown:
 ### 2. \_includes 디렉토리에 mathjax_support.html 파일 생성
 포스트 내에서 수식을 표현하는 기능을 선택적으로 사용할 수 있도록 하기 위해 \_include 디렉토리 내에 mathjax를 사용할 수 있도록 하는 스크립트 코드가 담긴 mathjax_support.html 파일을 생성한다.
 
->
-#### 참고 : MathJax CDN shutting down on April 30, 2017
+>#### 참고 : MathJax CDN shutting down on April 30, 2017
 위와 같은 이슈로 https://cdnjs.cloudflare.com에서 호스팅을 받아 사용하는 것을 추천[4, 5]
 
 ```html
