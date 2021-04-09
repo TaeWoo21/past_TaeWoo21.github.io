@@ -49,7 +49,7 @@ $font-family:         {{ site.font         | default:"Noto Sans, Helvetica, Aria
   @import "hydejack/__link__/menu";
   @import "hydejack/__link__/content";
   @import "hydejack/__link__/avatar";
-  @import "hydejack/__link__/katex";
+  //@import "hydejack/__link__/katex";
   @import "hydejack/__link__/footer";
 
   {% unless site.hydejack.no_mark_external or site.no_mark_external %}
