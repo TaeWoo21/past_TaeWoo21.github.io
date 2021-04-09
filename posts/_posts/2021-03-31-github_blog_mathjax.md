@@ -113,6 +113,24 @@ use_math: true
 	\end{aligned}
 	$$
 	
+	$$
+	\{aligned}
+	x = {-b \pm \sqrt{b^2-4ac} \over 2a}
+	\{aligned}
+	$$
+	
+	$$
+	\begin
+	x = {-b \pm \sqrt{b^2-4ac} \over 2a}
+	\end
+	$$
+	
+	$$
+	\begin
+	x = {-b \pm \sqrt{b^2-4ac} \over 2a}
+	\end
+	$$
+	
 - <b>Markdown</b>:
 
     ```
