@@ -130,6 +130,6 @@ use_math: true
 
 <style>
 .MJXc-display {
-    display: inline-block
+    display: block
 }
 </style>
