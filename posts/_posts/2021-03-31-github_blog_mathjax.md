@@ -105,23 +105,39 @@ use_math: true
 
 ### 2. Block
 
+$$
+\begin{aligned}
+x = {-b \pm \sqrt{b^2-4ac} \over 2a}
+\end{aligned}
+$$
+	
+$$
+\{aligned}
+x = {-b \pm \sqrt{b^2-4ac} \over 2a}
+\{aligned}
+$$
+	
+$$
+\begin
+x = {-b \pm \sqrt{b^2-4ac} \over 2a}
+\end
+$$
+	
+$$
+x = {-b \pm \sqrt{b^2-4ac} \over 2a}
+$$
+
+$$
+\lim_{x\to 0}{\frac{e^x-1}{2x}}
+\overset{\left[\frac{0}{0}\right]}{\underset{\mathrm{H}}{=}}
+\lim_{x\to 0}{\frac{e^x}{2}}={\frac{1}{2}}
+$$
+
+
+
 - <b>Example</b>:
+
 	
-	$$
-	\{aligned}
-	x = {-b \pm \sqrt{b^2-4ac} \over 2a}
-	\{aligned}
-	$$
-	
-	$$
-	\begin
-	x = {-b \pm \sqrt{b^2-4ac} \over 2a}
-	\end
-	$$
-	
-	$$
-	x = {-b \pm \sqrt{b^2-4ac} \over 2a}
-	$$
 	
 - <b>Markdown</b>:
 
