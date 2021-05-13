@@ -3,7 +3,6 @@ layout: post
 categories: posts
 title: "[Computer Architecture] CPU vs GPU vs TPU"
 comments: true
-use_math: true
 ---
 
 이 문서에서는 CPU, GPU 그리고 TPU에 대하여 설명한다. 참고할 수 있도록 필자가 참고했던 페이지를 포스트의 마지막에 reference로 추가하였다. 또한 이 문서에 포함되어 있는 내용은 작성일(2021-05-13) 기준 내용이므로 참고하길 바란다.
